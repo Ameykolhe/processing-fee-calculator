@@ -89,6 +89,7 @@ public class Summary implements Comparable<Summary>{
 	      .thenComparing(Summary::getTransactionType)
 	      .thenComparing(Summary::getDate, Comparator.nullsLast(Comparator.naturalOrder()))
 	      .thenComparing(Summary::getPriorityFlag)
+	      .thenComparing(Summary::getProcessingFee)
 	      .compare(this, o);
 	}
 
