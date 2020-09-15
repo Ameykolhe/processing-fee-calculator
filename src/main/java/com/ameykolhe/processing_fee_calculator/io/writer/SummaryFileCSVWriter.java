@@ -21,6 +21,8 @@ public class SummaryFileCSVWriter implements SummaryFileWriter {
 		Path myPath = Paths.get(fileName);
 		var writer = Files.newBufferedWriter(myPath, StandardCharsets.UTF_8);
 		
+		writer.write("Client Id,Transaction Type,Transaction Date,Priority,Processing Fee\n");
+		
 		StatefulBeanToCsv<Summary> beanToCsv = new StatefulBeanToCsvBuilder<Summary>(writer)
                 .withQuotechar(CSVWriter.NO_QUOTE_CHARACTER)
                 .build();
