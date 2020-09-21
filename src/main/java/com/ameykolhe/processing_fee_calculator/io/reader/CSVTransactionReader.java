@@ -13,7 +13,7 @@ import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.HeaderColumnNameMappingStrategy;
 
-public class TransactionCSVReader implements TransactionFileReader {
+public class CSVTransactionReader implements TransactionFileReader {
 
 	@Override
 	public List<Transaction> readFile(String fileName) throws IOException {

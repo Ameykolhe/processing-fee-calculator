@@ -14,7 +14,7 @@ import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 
-public class SummaryFileCSVWriter implements SummaryFileWriter {
+public class CSVSummaryFileWriter implements SummaryFileWriter {
 
 	@Override
 	public void writeFile(String fileName, List<Summary> summaryList) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
