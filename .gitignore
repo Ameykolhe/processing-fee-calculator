@@ -13,3 +13,6 @@ buildNumber.properties
 # editor config
 .vscode
 .settings
+
+.project
+.classpath
