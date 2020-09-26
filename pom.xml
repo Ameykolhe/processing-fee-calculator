@@ -6,7 +6,7 @@
 
   <groupId>com.ameykolhe</groupId>
   <artifactId>processing-fee-calculator</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>v1.1</version>
 
   <name>processing-fee-calculator</name>
   
@@ -98,6 +98,19 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <configuration>
+            <archive>
+              <manifest>
+                <mainClass>com.ameykolhe.processing_fee_calculator.ProcessingFeeCalculatorRunner</mainClass>
+              </manifest>
+            </archive>
+            <descriptorRefs>
+              <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
